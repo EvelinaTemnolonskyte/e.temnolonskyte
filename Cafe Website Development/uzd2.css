@@ -1,0 +1,186 @@
+/* pagrindinio teksto formatavimas bei lygiavimas */
+
+body {
+    padding-top: 1.3em; 
+	padding-left: 2em;
+	padding-right: 2em;
+	background-color: #FEEEE7;
+}
+
+h1, h2, h3 {
+	color: #584237;
+	font-family: 'Georgia', monospace;
+}
+
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3{
+	font-size: 1.2em;
+}
+
+ul, p{
+	font-family: "Optima" ,sans-serif;
+	color: #575757; 
+}
+
+
+p{
+	font-size: 1.1em;
+	line-height: 1.6; 
+	font-weight: 200; 
+	max-width: 700px; 
+	text-align: justify;
+	margin-left: 0.75em;
+	margin-right: 0.75em;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+	background-color: white;
+	padding: 1em;
+	text-align: center;
+	border-style: outset;
+	overflow: hidden; 
+}
+
+.text{
+	max-width:90%;
+	overflow: auto;
+}
+
+
+/* paveikliukų formatavimas */
+#main_image {
+    max-width: 100%;
+    
+    overflow: auto; 
+	min-width: 18.75em; 
+}
+
+
+#main_image img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+/* hipernuorodų formatavimas*/
+a{
+	color:  #584237;
+}
+
+
+a:active {
+	color: lightgrey; 
+}
+
+/* mygtuko formatavimas bei animacija*/
+.button {
+	display: inline-block;
+	border-radius: 1em;
+	background-color: #6B5443;
+	border: none;
+	color: #FEEEE7;
+	text-align: center;
+	font-size: 1em;
+	padding: 1.25em;
+	width: 12em;
+	transition: all 0.5s;
+	cursor: pointer;
+	
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -1.25em;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 1.5625em;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+/* sąrašo formatavimas*/
+
+
+
+ul > li{
+	list-style-image: url('bean3.png'); 
+}
+
+
+ul > li > ul > li {
+    list-style-type: circle; 
+	list-style-image: none;
+}
+
+
+ul{
+	text-align: left;
+}
+
+
+
+
+/* lentelių formatavimas*/
+
+table tr:nth-child(even){
+	background-color: #e0c8bd;
+}
+
+table tr{
+	font-family: "Optima" ,sans-serif;
+	color: #575757;
+	font-weight: 200; 
+}
+
+table, th, td {
+    border: 0.063em solid rgb(102, 95, 95); 
+}
+
+td, th {
+    padding: 0.313em; 
+	text-align: center;
+}
+
+.keep-background-white{
+	background-color: white;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: separate;
+    border-spacing: 0; 
+    background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.menu {
+	text-align: center;
+}
